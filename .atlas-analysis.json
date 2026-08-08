@@ -1,0 +1,74 @@
+{
+  "projectType": "saas",
+  "projectName": "Fort Worth Texas Roleplay",
+  "projectDescription": "Community rules, regulations, and server information for Fort Worth Texas Roleplay (FWTXRP), a FiveM GTA roleplay community.",
+  "theme": "almond",
+  "primaryColor": "#ef7025",
+  "lightColor": "#eec9bc",
+  "darkColor": "#4fa1ab",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Server Info",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "server-ranks",
+              "voice-channels"
+            ]
+          },
+          {
+            "group": "Vehicle Rules",
+            "pages": [
+              "vehicles/requirements",
+              "vehicles/civilian-vehicles"
+            ]
+          },
+          {
+            "group": "Weapon Rules",
+            "pages": [
+              "weapons/requirements"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Departments",
+        "groups": [
+          {
+            "group": "Police Department",
+            "pages": [
+              "fwpd/overview",
+              "fwpd/uniforms",
+              "fwpd/car-regulations"
+            ]
+          },
+          {
+            "group": "Fire Department",
+            "pages": [
+              "fire/overview"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Fort Worth Police Department uniform and equipment standards",
+    "FWPD vehicle livery and equipment regulations by car model",
+    "Server vehicle requirements by rank/booster tier",
+    "Weapon availability by community rank",
+    "Voice channel system for Law Enforcement, Fire, Civilians, and Scenes",
+    "Whitelisted department access controls",
+    "Server Booster and Roleplayer tier progression"
+  ],
+  "publicApiSurface": [
+    "/vc commands for voice channel management",
+    "Server rank tiers: Community Member, Server Booster, Active Roleplayer, Level 1/2 Roleplayer, Whitelisted Member",
+    "FWPD Class A/B/C uniform classes",
+    "Vehicle models: Crown Vic, Bullhorn, Falcon Interceptor",
+    "Equipment: Integrity Lightbar, Pushbar, Grille Lights, Bodycam, Shoulder Radio, Police Utility Belt"
+  ]
+}
