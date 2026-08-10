@@ -20,19 +20,55 @@
   "navigation": {
     "global": {
       "anchors": [
-{
-  "anchor": "Discord Server",
-  "icon": "discord",
-  "iconType": "brands",
-  "href": "https://discord.gg/fwtxrp"
-},
+        {
+          "anchor": "Discord Server",
+          "icon": "discord",
+          "iconType": "brands",
+          "href": "https://discord.gg/fwtxrp"
+        },
         {
           "anchor": "Join a Department",
           "icon": "building",
           "href": "https://discord.com/channels/1058906660451655741/1158006022489780235"
         }
       ]
-    }
+    },
+    "groups": [
+      {
+        "group": "Getting Started",
+        "pages": [
+          "server-ranks",
+          "voice-channels"
+        ]
+      },
+      {
+        "group": "Vehicle Rules",
+        "pages": [
+          "vehicles/requirements",
+          "vehicles/civilian-vehicles"
+        ]
+      },
+      {
+        "group": "Weapon Rules",
+        "pages": [
+          "weapons/requirements"
+        ]
+      },
+      {
+        "group": "Police Department",
+        "pages": [
+          "fwpd/overview",
+          "fwpd/uniforms",
+          "fwpd/car-regulations"
+        ]
+      },
+      {
+        "group": "Fire Department",
+        "pages": [
+          "fire/overview"
+        ]
+      }
+    ]
   },
   "navbar": {
     "primary": {
