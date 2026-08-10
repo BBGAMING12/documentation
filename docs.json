@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "name": "FWTXRP",
+  "name": "FWTXRP Documentation",
   "theme": "almond",
   "colors": {
-    "primary": "#ef7025",
-    "light": "#eec9bc",
-    "dark": "#ef7025"
+    "primary": "#1e5fa8",
+    "light": "#5c9ad6",
+    "dark": "#123b6b"
   },
   "background": {
     "dark": "#151517"
