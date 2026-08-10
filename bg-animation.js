@@ -48,19 +48,31 @@
     glow.style.width = colWidth + 'px';
   }
 
-  function resize() {
-    measure();
-    w = canvas.width = colWidth;
-    h = canvas.height = window.innerHeight;
-    groundY = h - 90;
+  function generateBuildings() {
     buildings = [];
     var x = -40;
     while (x < w + 40) {
       var bw = 40 + Math.random() * 70;
       var bh = 60 + Math.random() * (h * 0.3);
-      buildings.push({ x: x, w: bw, h: bh });
+      var windows = [];
+      for (var wy = groundY - bh + 10; wy < groundY - 8; wy += 16) {
+        for (var wx = x + 6; wx < x + bw - 6; wx += 12) {
+          if (Math.random() < 0.06) {
+            windows.push({ x: wx, y: wy });
+          }
+        }
+      }
+      buildings.push({ x: x, w: bw, h: bh, windows: windows });
       x += bw + 6;
     }
+  }
+
+  function resize() {
+    measure();
+    w = canvas.width = colWidth;
+    h = canvas.height = window.innerHeight;
+    groundY = h - 90;
+    generateBuildings();
     stars = [];
     for (var i = 0; i < 40; i++) {
       stars.push({ x: Math.random() * w, y: Math.random() * (groundY * 0.5), r: Math.random() * 1.2 });
@@ -82,6 +94,7 @@
       count = 1 + Math.floor(Math.random() * 5);
     }
     newScene.lastCount = count;
+    generateBuildings();
     var cars = [];
     for (var i = 0; i < count; i++) {
       var agency = AGENCIES[Math.floor(Math.random() * AGENCIES.length)];
@@ -135,12 +148,8 @@
       ctx.fillStyle = '#1b2130';
       ctx.fillRect(b.x, groundY - b.h, b.w, b.h);
       ctx.fillStyle = '#e8c355';
-      for (var wy = groundY - b.h + 10; wy < groundY - 8; wy += 16) {
-        for (var wx = b.x + 6; wx < b.x + b.w - 6; wx += 12) {
-          if (Math.random() < 0.06) {
-            ctx.fillRect(wx, wy, 4, 6);
-          }
-        }
+      for (var wi = 0; wi < b.windows.length; wi++) {
+        ctx.fillRect(b.windows[wi].x, b.windows[wi].y, 4, 6);
       }
     }
     ctx.fillStyle = '#181c24';
