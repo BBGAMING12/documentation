@@ -5,10 +5,33 @@
   "colors": {
     "primary": "#ef7025",
     "light": "#eec9bc",
-    "dark": "#4fa1ab"
+    "dark": "#22c55e"
   },
-  "favicon": "/favicon.svg",
+  "background": {
+    "dark": "#0a0a0a"
+  },
+  "appearance": {
+    "default": "dark"
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "favicon": "/fwtxrplogo.png",
   "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Support Server",
+          "icon": "discord",
+          "href": "https://discord.gg/fwtxrp"
+        },
+        {
+          "anchor": "Join a Department",
+          "icon": "building",
+          "href": "https://discord.com/channels/1058906660451655741/1158006022489780235"
+        }
+      ]
+    },
     "tabs": [
       {
         "tab": "Server Info",
