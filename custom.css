@@ -1,7 +1,15 @@
+#sidebar::after {
+  content: "© 2026 Blacksite Systems LLC. All rights reserved.";
+  display: block;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.35);
+  text-align: center;
+  padding: 1rem 0.5rem;
+}
+
 a[href*="discord"] {
   position: relative;
 }
-
 a[href*="discord"]::before {
   content: "";
   position: absolute;
@@ -16,9 +24,16 @@ a[href*="discord"]::before {
   z-index: 0;
   pointer-events: none;
 }
-
 a[href*="discord"] svg,
 a[href*="discord"] img {
   position: relative;
   z-index: 1;
+}
+
+.navbar img,
+#navbar img,
+nav img {
+  height: 80px !important;
+  width: auto !important;
+  max-height: none !important;
 }

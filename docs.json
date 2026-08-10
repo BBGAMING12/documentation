@@ -1,6 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "name": "FWTXRP Documentation",
+  "logo": {
+  "light": "/fwtxrp_logo.png",
+  "dark": "/fwtxrp_logo.png",
+  "href": "/"
+},
   "theme": "almond",
   "colors": {
     "primary": "#1e5fa8",
@@ -11,7 +16,8 @@
     "dark": "#151517"
   },
   "appearance": {
-    "default": "dark"
+    "default": "dark",
+    "strict": true
   },
   "icons": {
     "library": "lucide"
