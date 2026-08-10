@@ -9,32 +9,6 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Server Info",
-        "groups": [
-          {
-            "group": "Getting Started",
-            "pages": [
-              "introduction",
-              "server-ranks",
-              "voice-channels"
-            ]
-          },
-          {
-            "group": "Vehicle Rules",
-            "pages": [
-              "vehicles/requirements",
-              "vehicles/civilian-vehicles"
-            ]
-          },
-          {
-            "group": "Weapon Rules",
-            "pages": [
-              "weapons/requirements"
-            ]
-          }
-        ]
-      },
-      {
         "tab": "Departments",
         "groups": [
           {
