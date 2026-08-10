@@ -5,10 +5,10 @@
   "colors": {
     "primary": "#ef7025",
     "light": "#eec9bc",
-    "dark": "#22c55e"
+    "dark": "#ef7025"
   },
   "background": {
-    "dark": "#0a0a0a"
+    "dark": "#151517"
   },
   "appearance": {
     "default": "dark"
@@ -36,36 +36,39 @@
     "groups": [
       {
         "group": "Getting Started",
+        "icon": "rocket",
         "pages": [
-          "server-ranks",
-          "voice-channels"
+          "introduction",
+          "roleplay-scenarios",
+          "unwhitelisted-information"
         ]
       },
       {
-        "group": "Vehicle Rules",
+        "group": "Communications",
+        "icon": "radio",
         "pages": [
-          "vehicles/requirements",
-          "vehicles/civilian-vehicles"
+          "comms/voice-system",
+          "comms/alphabet",
+          "comms/10-codes"
         ]
       },
       {
-        "group": "Weapon Rules",
+        "group": "Restrictions",
+        "icon": "shield",
         "pages": [
-          "weapons/requirements"
-        ]
-      },
-      {
-        "group": "Police Department",
-        "pages": [
-          "fwpd/overview",
-          "fwpd/uniforms",
-          "fwpd/car-regulations"
-        ]
-      },
-      {
-        "group": "Fire Department",
-        "pages": [
-          "fire/overview"
+          {
+            "group": "Vehicle Information",
+            "pages": [
+              "vehicles/requirements",
+              "vehicles/civilian-vehicles"
+            ]
+          },
+          {
+            "group": "Weapon Information",
+            "pages": [
+              "weapons/requirements"
+            ]
+          }
         ]
       }
     ]

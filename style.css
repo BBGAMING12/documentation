@@ -1,0 +1,65 @@
+html,
+body,
+#body-content,
+#content-area,
+#content,
+#panel,
+#background-color,
+#sidebar,
+#sidebar-content,
+#table-of-contents,
+#table-of-contents-layout,
+#table-of-contents-content {
+  background: #151517 !important;
+}
+
+#background-color,
+#content-area,
+#content,
+#table-of-contents,
+#table-of-contents-layout,
+#table-of-contents-content {
+  background: transparent !important;
+}
+
+#navbar {
+  background: #151517 !important;
+  border-bottom: 1px solid #2a2a2e;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+  position: relative;
+  z-index: 20;
+}
+
+#fwtxrp-bg-canvas {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: -1 !important;
+  pointer-events: none !important;
+  opacity: 0.6 !important;
+  display: block !important;
+}
+
+#fwtxrp-bg-glow {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: -1 !important;
+  pointer-events: none !important;
+  mix-blend-mode: screen;
+  animation: fwtxrp-glow-flash 2.4s infinite;
+}
+
+@keyframes fwtxrp-glow-flash {
+  0%, 45% {
+    background: radial-gradient(circle at 15% 85%, rgba(239, 30, 30, 0.22), transparent 40%);
+  }
+  50%, 95% {
+    background: radial-gradient(circle at 15% 85%, transparent 40%, transparent);
+  }
+  100% {
+    background: radial-gradient(circle at 15% 85%, rgba(239, 30, 30, 0.22), transparent 40%);
+  }
+}
