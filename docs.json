@@ -20,11 +20,12 @@
   "navigation": {
     "global": {
       "anchors": [
-        {
-          "anchor": "Support Server",
-          "icon": "discord",
-          "href": "https://discord.gg/fwtxrp"
-        },
+{
+  "anchor": "Discord Server",
+  "icon": "discord",
+  "iconType": "brands",
+  "href": "https://discord.gg/fwtxrp"
+},
         {
           "anchor": "Join a Department",
           "icon": "building",
