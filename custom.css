@@ -1,11 +1,11 @@
 /* Boxed outline around just the icon on global sidebar anchors
    (e.g. Support Server, Join a Department) — not the text or full row */
-nav a[href*="discord"] svg,
-nav a[href*="discord.com/channels"] svg,
-nav a[href*="discord"] img,
-nav a[href*="discord.com/channels"] img,
-nav a[href*="discord"] > *:first-child,
-nav a[href*="discord.com/channels"] > *:first-child {
+a[href*="discord"] svg,
+a[href*="discord.com/channels"] svg,
+a[href*="discord"] img,
+a[href*="discord.com/channels"] img,
+a[href*="discord"] > *:first-child,
+a[href*="discord.com/channels"] > *:first-child {
   padding: 0.4rem !important;
   border: 2px solid #ffffff !important;
   border-radius: 0.5rem !important;
