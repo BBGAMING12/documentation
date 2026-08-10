@@ -38,9 +38,9 @@
         "group": "Getting Started",
         "icon": "rocket",
         "pages": [
-          "introduction",
-          "roleplay-scenarios",
-          "unwhitelisted-information"
+          "index",
+          "gettingstarted/roleplay-scenes",
+          "gettingstarted/unwhitelisted"
         ]
       },
       {
@@ -56,19 +56,8 @@
         "group": "Restrictions",
         "icon": "shield",
         "pages": [
-          {
-            "group": "Vehicle Information",
-            "pages": [
-              "vehicles/requirements",
-              "vehicles/civilian-vehicles"
-            ]
-          },
-          {
-            "group": "Weapon Information",
-            "pages": [
-              "weapons/requirements"
-            ]
-          }
+          "restric/wep_reqire",
+          "restric/car_reqire"
         ]
       }
     ]
