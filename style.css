@@ -20,32 +20,12 @@ body {
 #sidebar {
   background: #0a0a0b !important;
   border-right: 1px solid #1c1c1e;
-  position: relative !important;
-  z-index: 10 !important;
 }
 
 #navbar {
   background: #0a0a0b !important;
   border-bottom: 1px solid #1c1c1e;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
-  position: relative !important;
-  z-index: 20 !important;
-}
-
-#content-area,
-#content-container {
-  position: relative !important;
-  z-index: 10 !important;
-}
-
-#table-of-contents,
-#table-of-contents-layout,
-#table-of-contents-content {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  position: relative !important;
-  z-index: 10 !important;
 }
 
 card,
@@ -57,7 +37,7 @@ card,
   position: fixed !important;
   top: 0 !important;
   height: 100vh !important;
-  z-index: 1 !important;
+  z-index: 0 !important;
   pointer-events: none !important;
   opacity: 0.28 !important;
   display: block !important;
@@ -67,7 +47,7 @@ card,
   position: fixed !important;
   bottom: 0 !important;
   height: 100vh !important;
-  z-index: 1 !important;
+  z-index: 0 !important;
   pointer-events: none !important;
   overflow: hidden !important;
 }
@@ -90,6 +70,12 @@ card,
   50%, 100% {
     background: radial-gradient(circle 150vh at -25vh 125vh, rgba(40, 100, 255, 0.42) 0%, rgba(40, 100, 255, 0.24) 30%, rgba(40, 100, 255, 0.1) 55%, transparent 85%);
   }
+}
+
+/* Force every real page element above the fixed background layers */
+body > *:not(#fwtxrp-bg-canvas):not(#fwtxrp-bg-glow) {
+  position: relative;
+  z-index: 2;
 }
 
 #sidebar-content {

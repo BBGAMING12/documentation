@@ -62,8 +62,8 @@
         "group": "Restrictions",
         "icon": "shield",
         "pages": [
-          "restric/wep_reqire",
-          "restric/car_reqire"
+          "restrictions/weapon_restrictions",
+          "restrictions/vehicle_restrictions"
         ]
       }
     ]
