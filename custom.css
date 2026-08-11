@@ -48,10 +48,10 @@ nav img {
   margin: 2px 4px 2px 0;
 }
 
-.badge-booster1 { background: #B4C7DE; color: #1a2b3c; }
-.badge-booster2 { background: #C9A0DC; color: #2e0a3d; }
+.badge-booster1 { background: #e8a0fa; color: #1a2b3c; }
+.badge-booster2 { background: #f730c5; color: #2e0a3d; }
 .badge-level1   { background: #8FBC8F; color: #0d2b0d; }
-.badge-level2   { background: #8FBC8F; color: #0d2b0d; }
+.badge-level2   { background: #5dd35d; color: #0d2b0d; }
 .badge-active   { background: #7FB3E8; color: #0a1f33; }
 .badge-whitelisted { background: #F4B183; color: #3d1f00; }
 .badge-community    { background: #D0D0D0; color: #222; }
